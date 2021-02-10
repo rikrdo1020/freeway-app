@@ -18,7 +18,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->resource('clientes','App\Http\Controllers\ClienteController');
-Route::middleware(['auth:sanctum', 'verified'])->resource('contrato/{id}', 'App\Http\Controllers\PDFController');//agregue id
+Route::middleware(['auth:sanctum', 'verified'])->resource('contrato/{id}', 'App\Http\Controllers\PDFController');
 
 
 
